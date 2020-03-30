@@ -1,10 +1,10 @@
 *{
-    font-family: "Gilroy";
+    font-family: 'Exo 2', sans-serif;
     user-select: none;
     
 }
 .pageTitle {
-    font-family: "Gilroy";
+    font-family: 'Exo 2', sans-serif;
     font-weight: 500;
     font-size: 40px;
     color: #000;
@@ -18,14 +18,12 @@
     display: flex;
     justify-content: center;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .brandLink {
     color: #77716A;
-    border-bottom: 2px dotted currentColor;
-}
-a:hover{
-    color:#5B84F0;
+    border-bottom: 1px dotted currentColor;
 }
 
 .allBrands {
@@ -35,18 +33,22 @@ a:hover{
     padding-left: 20px;
     padding-right: 20px;
     background-color: #F5F3E8;
-
+    height: 48px;
+    margin-bottom: 7px;
+    width: 90px;
 }
 
 .brand {
+    margin-bottom: 7px;
     margin-left: 7px;
     margin-right: 7px;
     padding-left: 20px;
     padding-right: 20px;
-    width: 100px;
+    width: 90px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 48px;
 }
 
 .image {
@@ -65,6 +67,7 @@ a:hover{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 
 }
 
@@ -73,38 +76,35 @@ a:hover{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 30px;
+    
 }
 
 .product {
     display: flex;
     flex-direction: column;
     width: 300px;
-    
     margin: 10px;
 }
 
 @supports (display: grid) {
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, 300px);
       grid-gap: 20px;
+      margin: 0px;
     }
   
     .product {
       width: initial; 
     }
   }
-  
-
-
 
 .prodImageStyle {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 350px;
-    height: 250px;
+    width: 300px;
+    height: 200px;
 }
 
 .prodImageTar {
@@ -120,7 +120,7 @@ a:hover{
 }
 
 .prodType {
-    font-family: "Gilroy";
+    font-family: 'Exo 2', sans-serif;
     font-weight: 300;
     font-size: 17px;
     color: #3C2F20;
@@ -129,25 +129,28 @@ a:hover{
 }
 
 .prodName {
-    font-family: "Gilroy";
-    font-weight: 300;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
     font-size: 40px;
     color: #3C2F20;
     text-decoration: none;
-    border-bottom: 2px dotted currentColor;
+    border-bottom: 1px dotted currentColor;
     display:inline;
 }
-a:hover{
+.link {
+    transition: color 200ms easy-in-out 0s; 
+}
+.link:hover{
     color:#5B84F0;
 }
 
 .prodTaste {
-    font-family: "Gilroy";
-    font-weight: 300;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
     font-size: 20px;
     color: #3C2F20;
     text-decoration: none;
-    border-bottom: 2px dotted currentColor;
+    border-bottom: 1px dotted currentColor;
 }
 
 .blocks {
