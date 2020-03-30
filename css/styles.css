@@ -61,29 +61,48 @@ a:hover{
     background-image: url("../images/cooking.png");
 }
 
-.products {
+.forBeauty {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    position: relative;
-    /* align-items: center; */
-    padding-top: 30px;
+    justify-content: center;
+
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    margin-left: 100px ;
-    /* justify-content: flex-start; */
+    margin-top: 30px;
 }
 
 .product {
     display: flex;
     flex-direction: column;
-    margin-right: 20px;
-    margin-top: 20px;
+    width: 300px;
+    
+    margin: 10px;
 }
+
+@supports (display: grid) {
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
+    }
+  
+    .product {
+      width: initial; 
+    }
+  }
+  
+
+
 
 .prodImageStyle {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-   
     width: 350px;
     height: 250px;
 }
