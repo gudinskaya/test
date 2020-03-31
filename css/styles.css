@@ -120,6 +120,7 @@
     }
     .product {
         width: initial;
+        margin: 0px;
     }
 }
 
